@@ -1,0 +1,919 @@
+/*
+======================
+For - Big - Screen
+======================
+*/
+
+
+@media screen and (min-width: 1900px) {}
+
+
+/*
+=======================
+For - Dextop - Screen
+=======================
+*/
+
+@media screen and (min-width: 1400px) and (max-width: 1439px) {
+
+	.video-bac {
+        left: -46px;
+    }
+    
+
+
+}
+
+
+/*
+====================================
+For -  Leptop/Mini Desktop - Screen
+====================================
+*/
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    /* 
+    ----------------
+    join-us-area
+    ----------------
+    */
+
+    .video-bac {
+        top: -65px;
+        width: 115%;
+    }
+        
+   
+	
+}
+
+
+/*
+=============================
+For - Mini - Leptop - Screen
+=============================
+*/
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .text-xxl {
+        font-size: 21px;
+        line-height: 33.4px;
+    }
+
+    .text-base, p {
+        font-size: 15px;
+    }
+
+
+
+    /* 
+    ------------------
+    header-area
+    ------------------
+    */
+
+    .header-list {
+        gap: 28px;
+    }
+
+
+    /* 
+    ----------------
+    banner-area
+    ----------------
+    */
+
+    .banner-area {
+        padding: 50px 0 120px;
+    }
+
+    .banner-image {
+        padding: 30px 0 0;
+    }
+
+
+
+    /* 
+    ----------------
+    works-area
+    ----------------
+    */
+
+    .works-title {
+        padding: 0 0 35px;
+    }
+
+
+
+
+    /* 
+    ---------------------------
+    features-and-benefits-area
+    ---------------------------
+    */
+
+    .features-benefits-box {
+        padding: 17px;
+    }
+
+
+
+        
+    /* 
+    ----------------
+    join-us-area
+    ----------------
+    */
+
+    .join-us-area {
+        padding: 45px 0;
+    }
+
+    .join-us-box {
+        padding: 35px 40px;
+    }
+
+    .video-bac {
+        top: -65px;
+        width: 115%;
+    }
+
+
+
+
+    /* 
+    ----------------
+    faq-area
+    ----------------
+    */
+
+    .faq-area .row {
+        --bs-gutter-x: 26px;
+    }
+
+    .faq-div {
+        padding: 25px 20px;
+        margin: 24px 0 0;
+    }
+
+
+    /* 
+    --------------------
+    people-opinion-area
+    --------------------
+    */
+
+    .people-opinion-area {
+        padding: 0 0 60px;
+    }
+
+	
+}
+
+
+
+/*
+=======================
+For - Ipad - Screen
+=======================
+*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    h1 {
+        font-size: 45px;
+        line-height: 44px;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 37px;
+        line-height: 35.2px;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 35.2px;
+    }
+
+    .text-xxl {
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+
+    .text-xl, h6 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .text-lg {
+        font-size: 16px;
+        line-height: 19.36px;
+    }
+
+    .cuples-btn-div {
+        justify-content: center;
+        gap: 27px;
+    }
+
+    .cuples-btn-div a:first-child {
+        background-color: #696D70;
+    }
+
+    .btn-shape {
+        font-size: 14px;
+        width: 135px;
+        padding: 8px 12px;
+    }
+
+
+    
+    /* 
+    ------------------
+    header-area
+    ------------------
+    */
+
+    .sm-header {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 30px 16px;
+    }
+
+
+
+
+    /* 
+    ----------------
+    banner-area
+    ----------------
+    */
+
+    .banner-area {
+        padding: 50px 0 0;
+        text-align: center;
+    }
+
+    .banner-image {
+        padding: 30px 0 0;
+    }
+
+
+
+
+    /* 
+    ----------------
+    works-area
+    ----------------
+    */
+
+    .works-area {
+        padding: 48px 0 0;
+    }
+
+    .works-title {
+        padding: 0 0 40px;
+    }
+
+    .works-demo {
+        padding: 24px 0 0;
+    }
+
+    .works-content {
+        margin: 0 auto 48px;
+    }
+
+    .works-demo {
+        background: var(--white-colour);
+    }
+
+
+
+
+    /* 
+    ---------------------------
+    features-and-benefits-area
+    ---------------------------
+    */
+
+    .features-and-benefits-area {
+        padding: 80px 0 16px;
+        background: var(--white-colour);
+    }
+
+    .features-benefits-content {
+        text-align: center;
+        padding: 0 0 64px;
+    }
+
+    .features-benefits-box {
+        margin: 0 0 32px;
+    }
+
+    .features-and-benefits-area .row {
+        --bs-gutter-x: 32px;
+        --bs-gutter-y: 0px;
+    }
+
+
+
+
+
+
+    /* 
+    ----------------
+    join-us-area
+    ----------------
+    */
+
+    .join-us-area {
+        padding: 15px 0 74px;
+        background-color: var(--white-colour);
+        overflow-x: hidden;
+        overflow-y: clip;
+    }
+
+    .join-us-box {
+        box-shadow: 0px 9px 25px 0px #0000001A;
+    }
+        
+    .join-us-content h2 {
+        text-align: center;
+    }
+
+    .video-area {
+        padding: 108px 0 0;
+        text-align: center;
+    }
+
+    .video-bac {
+        top: 59px;
+        z-index: -1;
+        left: -34px;
+        max-width: 100%;
+    }
+
+    .video-image {
+        width: 117%;
+        max-width: none;
+        left: -9%;
+        position: relative;
+    }
+
+
+
+
+
+    /* 
+    ----------------
+    faq-area
+    ----------------
+    */
+
+    .faq-area {
+        background-color: var(--white-colour);
+        padding: 15px 0 48px;
+    }
+
+    .faq-area .row {
+        --bs-gutter-x: 0px;
+    }
+
+    .faq-title {
+        padding: 0 0 25px;
+    }
+
+    .faq-div {
+        padding: 32px 0;
+        border: none;
+        border-bottom: 1px solid #E2E8F0;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .faq-div.active {
+        box-shadow: none;
+        border: none;
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .faq-div button {
+        font-size: 18px;
+        line-height: 21.78px;
+        padding-right: 30px;
+    }
+
+    .faq-div p {
+        padding: 12px 6px 0 0;
+    }
+
+    .faq-div button i {
+        top: 2px;
+        transform: none;
+    }
+
+    .faq-div.active i {
+        transform: rotate(180deg);
+    }
+
+    .last-faq-div {
+        border-bottom: 0;
+    }
+
+
+
+
+    /* 
+    --------------------
+    people-opinion-area
+    --------------------
+    */
+
+    .people-opinion-area {
+        padding: 48px 0 70px;
+        background-color: var(--white-colour);
+    }
+
+    .opinion-title h2 {
+        font-size: 24px;
+    }
+
+    .opinion-title {
+        padding: 0 0 30px;
+    }
+
+    #opinionSlider .owl-nav {
+        max-width: 260px;
+    }
+
+
+
+
+    /* 
+    --------------------
+    vip-area
+    --------------------
+    */
+
+    .vip-area {
+        background-image: none;
+        padding: 16px 0;
+        text-align: center;
+    }
+
+    .vip-content {
+        padding: 32px 0;
+    }
+
+    .vip-content h2 {
+        font-size: 24px;
+    }
+
+    .vip-content p {
+        padding: 24px 0;
+    }
+
+    .vip-content a {
+        font-size: 20px;
+        padding: 16px 32px;
+    }
+
+
+
+
+    /* 
+    ------------------
+    footer-area
+    ------------------
+    */
+
+    .footer-area .row > div {
+        padding-bottom: 32px;
+    }
+
+    .bottom-area {
+        display: block !important;
+        text-align: center !important;
+    }
+
+    .bottom-area ul {
+        justify-content: center !important;
+        padding: 30px 0 0;
+    }
+    
+
+
+
+}
+
+
+
+
+
+
+/*
+=======================
+For - Mobile - Screen
+=======================
+*/
+
+
+@media screen and (max-width: 767px) {
+
+
+    h1 {
+        font-size: 40px;
+        line-height: 44px;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 35.2px;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 35.2px;
+    }
+
+    .text-xxl {
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+
+    .text-xl, h6 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .text-lg {
+        font-size: 16px;
+        line-height: 19.36px;
+    }
+
+    .cuples-btn-div {
+        justify-content: center;
+        gap: 27px;
+    }
+
+    .cuples-btn-div a:first-child {
+        background-color: #696D70;
+    }
+
+    .btn-shape {
+        font-size: 14px;
+        width: 135px;
+        padding: 8px 12px;
+    }
+
+
+    /* 
+    -------------------------
+    header-banner-area start
+    -------------------------
+    */
+
+    .header-banner-area {
+        background-image: url(../images/bg/header-banner-bg-sm.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-color: var(--pale-grey);
+    }
+
+
+
+    /* 
+    ----------------
+    banner-area
+    ----------------
+    */
+
+    .banner-area {
+        padding: 30px 0 0;
+        text-align: center;
+    }
+
+    .banner-image {
+        padding: 30px 0 0;
+    }
+
+
+
+
+    /* 
+    ----------------
+    works-area
+    ----------------
+    */
+
+    .works-area {
+        padding: 48px 0 0;
+    }
+
+    .works-title {
+        padding: 0;
+    }
+
+    .works-demo {
+        padding: 24px 0 0;
+    }
+
+    .works-content {
+        margin: 0 auto 48px;
+    }
+
+    .works-demo {
+        background: var(--white-colour);
+    }
+
+
+
+
+    /* 
+    ---------------------------
+    features-and-benefits-area
+    ---------------------------
+    */
+
+    .features-and-benefits-area {
+        padding: 20px 0 16px;
+        background: var(--white-colour);
+    }
+
+    .features-benefits-content {
+        text-align: center;
+        padding: 0 0 64px;
+    }
+
+    .features-benefits-box {
+        box-shadow: 0px 0px 4.9px 0px #56B7FF8C;
+        background-color: #E7F3FF;
+        margin: 0 0 32px;
+    }
+
+    .features-and-benefits-area .row {
+        --bs-gutter-x: 0px;
+        --bs-gutter-y: 0px;
+    }
+
+    .features-and-benefits-area .row > div {
+        padding: 0 8px 0;
+    }
+
+
+
+
+
+    /* 
+    ----------------
+    join-us-area
+    ----------------
+    */
+
+    .join-us-area {
+        padding: 15px 0 74px;
+        background-color: var(--white-colour);
+        overflow-x: hidden;
+        overflow-y: clip;
+    }
+
+    .join-us-box {
+        padding: 32px 16px 0;
+        box-shadow: 0px 9px 25px 0px #0000001A;
+    }
+        
+    .join-us-content h2 {
+        text-align: center;
+    }
+
+    .video-area {
+        padding: 108px 0 0;
+        text-align: center;
+    }
+
+    .video-bac {
+        top: 59px;
+        z-index: -1;
+        left: -34px;
+    }
+
+    .video-image {
+        width: 117%;
+        max-width: none;
+        left: -9%;
+        position: relative;
+    }
+
+
+
+
+
+    /* 
+    ----------------
+    faq-area
+    ----------------
+    */
+
+    .faq-area {
+        background-color: var(--white-colour);
+        padding: 15px 0 48px;
+    }
+
+    .faq-area .row {
+        --bs-gutter-x: 0px;
+    }
+
+    .faq-title {
+        padding: 0 0 25px;
+    }
+
+    .faq-div {
+        padding: 32px 0;
+        border: none;
+        border-bottom: 1px solid #E2E8F0;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .faq-div.active {
+        box-shadow: none;
+        border: none;
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .faq-div button {
+        font-size: 18px;
+        line-height: 21.78px;
+        padding-right: 30px;
+    }
+
+    .faq-div p {
+        padding: 12px 6px 0 0;
+    }
+
+    .faq-div button i {
+        top: 2px;
+        transform: none;
+    }
+
+    .faq-div.active i {
+        transform: rotate(180deg);
+    }
+
+    .last-faq-div {
+        border-bottom: 0;
+    }
+
+
+
+
+    /* 
+    --------------------
+    people-opinion-area
+    --------------------
+    */
+
+    .people-opinion-area {
+        padding: 48px 0;
+        background-color: var(--white-colour);
+    }
+
+    .opinion-title h2 {
+        font-size: 24px;
+    }
+
+    .opinion-title {
+        padding: 0 0 30px;
+    }
+
+    #opinionSlider .owl-nav {
+        display: none;
+    }
+
+
+
+
+    /* 
+    --------------------
+    vip-area
+    --------------------
+    */
+
+    .vip-area {
+        background-image: none;
+        padding: 16px 0;
+    }
+
+    .vip-content {
+        padding: 32px 0;
+    }
+
+    .vip-content h2 {
+        font-size: 24px;
+    }
+
+    .vip-content p {
+        padding: 24px 0;
+    }
+
+    .vip-content a {
+        font-size: 20px;
+        padding: 16px 32px;
+    }
+
+
+    /* 
+    --------------------
+    footer-area
+    --------------------
+    */
+
+    .footer-area {
+        text-align: center;
+    }
+
+    .footer-area .row > div {
+        padding-bottom: 32px;
+    }
+
+    .bottom-area {
+        margin: 8px 0 0;
+    }
+
+    .bottom-area ul {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .bottom-area ul li {
+        width: 33.33%;
+        text-align: center;
+        padding: 27px 0 0;
+    }
+
+
+
+
+    /* paidModal */
+    .form-div .row {
+        --bs-gutter-y: 10px;
+    }
+
+    .form-div input {
+        margin: 0;
+    }
+
+            
+
+    
+}
+
+
+
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    #paidModal .modal-dialog {
+        padding: 25px;
+    }
+    
+
+    
+}
+
+
+@media screen and (max-width: 575px) {
+
+
+    /* paidModal */
+    #paidModal .modal-body {
+        padding: 30px 20px;
+    }
+
+    .get-demo-btn {
+        margin: 32px 0 0;
+    }
+
+    .form-div .row {
+        --bs-gutter-y: 10px;
+    }
+
+    .form-div input {
+        margin: 0;
+    }
+
+}
