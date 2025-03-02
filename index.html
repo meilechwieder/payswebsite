@@ -3,6 +3,9 @@
 
 <head>
     <!-- Meta - Setup -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,9 +14,12 @@
 
     <!-- Title -->
     <title>paySyncr</title>
-
-    <!-- Fav - icon -->
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://app.paysyncr.com/assets/img/favicons/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="https://app.paysyncr.com/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://app.paysyncr.com/assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://app.paysyncr.com/assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="https://app.paysyncr.com/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="https://app.paysyncr.com/assets/img/favicons/mstile-150x150.png">
 
     <!-- FontAwesome - Link -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
@@ -35,6 +41,32 @@
 
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,7 +77,21 @@
     -----------------------------------
     -->
     <main>
-
+        <div class="overlay" id="overlay">
+            <h2 style="color: white;text-align: center;">Website is password protected. Enter code to continue</h2>
+            <input type="password" id="password" placeholder="Enter Code">
+            <button onclick="checkPassword()" style="color: white;">Submit</button>
+        </div>
+        <script>
+            function checkPassword() {
+                var password = document.getElementById("password").value;
+                if (password === "123456") {
+                    document.getElementById("overlay").style.display = "none";
+                } else {
+                    alert("Incorrect password. Try again.");
+                }
+            }
+        </script>
         <article>
             
             <!-- header and banner area -->
@@ -618,7 +664,17 @@
   
 
   
-
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
     <!-- Scroll to Back Button -->
     <button class="scrollToTopBtn"><i class="fa-light fa-angles-up"></i></button>
 
