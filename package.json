@@ -1,4 +1,4 @@
 {
   "devDependencies":{
-    "@netlify/plugin-visual":"latest"
+    "@netlify/plugin-visual-editor":"latest"
   }}
