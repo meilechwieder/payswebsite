@@ -38,6 +38,32 @@
 
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,7 +74,21 @@
     -----------------------------------
     -->
     <main>
-
+        <div class="overlay" id="overlay">
+            <h2 style="color: white;text-align: center;">Website is password protected. Enter code to continue</h2>
+            <input type="password" id="password" placeholder="Enter Code">
+            <button onclick="checkPassword()" style="color: white;">Submit</button>
+        </div>
+        <script>
+            function checkPassword() {
+                var password = document.getElementById("password").value;
+                if (password === "123456") {
+                    document.getElementById("overlay").style.display = "none";
+                } else {
+                    alert("Incorrect password. Try again.");
+                }
+            }
+        </script>
         <article>
             
             <!-- header and banner area -->
