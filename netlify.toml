@@ -2,4 +2,4 @@
   publish = "/"
 
 [[plugins]]
-  package = "@netlify/plugin-visual"
+  package = "@netlify/plugin-visual-editor"
