@@ -5,9 +5,11 @@ export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
   nodeVersion: "18",
   ssgName: "custom",
+   "postInstallCommand": "npm i --no-save @stackbit/types" ,
   contentSources: [
     new GitContentSource({
       rootPath: __dirname,
+      devCommand: "npx http-server ./ -p {PORT}",
       contentDirs: ["content"],
       models: [
         {
